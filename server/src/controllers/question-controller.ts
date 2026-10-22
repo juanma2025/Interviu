@@ -24,9 +24,10 @@ export class QuestionController extends BaseController {
   })
 
   public getById = this.asyncHandler(async (req: Request, res: Response) => {
-    const question = await this.#questionRepo.findById(req.params.id)
+    const id = String(req.params.id)
+    const question = await this.#questionRepo.findById(id)
     if (!question) {
-      throw new NotFoundError(`Pregunta con ID '${req.params.id}' no encontrada`)
+      throw new NotFoundError(`Pregunta con ID '${id}' no encontrada`)
     }
     return this.ok(res, question.toJSON())
   })

@@ -51,7 +51,10 @@ export class EvaluationService {
       throw new NotFoundError(`Pregunta con ID '${answer.questionId}' no encontrada`)
     }
 
-    const _user = await this.#userRepo.findById(userId)
+    const user = await this.#userRepo.findById(userId)
+    if (!user) {
+      throw new NotFoundError(`Usuario con ID '${userId}' no encontrado`)
+    }
     const rubric = Rubric.createDefault()
 
     try {

@@ -32,18 +32,20 @@ export class SessionController extends BaseController {
 
   public getById = this.asyncHandler(async (req: Request, res: Response) => {
     if (!req.user) throw new AuthError('Usuario no autenticado')
-    const session = await this.#sessionService.getSession(req.user.uid, req.params.id)
+    const id = String(req.params.id)
+    const session = await this.#sessionService.getSession(req.user.uid, id)
     return this.ok(res, session.toJSON())
   })
 
   public submitAnswer = this.asyncHandler(async (req: Request, res: Response) => {
     if (!req.user) throw new AuthError('Usuario no autenticado')
+    const id = String(req.params.id)
     const { questionId, text, seconds, source } = req.body
 
     if (!questionId) throw new ValidationError('questionId es obligatorio')
     if (typeof text !== 'string') throw new ValidationError('text debe ser una cadena')
 
-    const { session, answer } = await this.#sessionService.submitAnswer(req.user.uid, req.params.id, {
+    const { session, answer } = await this.#sessionService.submitAnswer(req.user.uid, id, {
       questionId,
       text,
       seconds: typeof seconds === 'number' ? seconds : 0,
@@ -64,7 +66,8 @@ export class SessionController extends BaseController {
 
   public skip = this.asyncHandler(async (req: Request, res: Response) => {
     if (!req.user) throw new AuthError('Usuario no autenticado')
-    const session = await this.#sessionService.skipQuestion(req.user.uid, req.params.id)
+    const id = String(req.params.id)
+    const session = await this.#sessionService.skipQuestion(req.user.uid, id)
     return this.ok(res, session.toJSON())
   })
 }

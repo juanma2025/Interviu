@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { Button } from '../../components/ui/Button.js'
 import { Textarea } from '../../components/ui/Textarea.js'

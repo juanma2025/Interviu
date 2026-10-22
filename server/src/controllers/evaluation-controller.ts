@@ -13,7 +13,8 @@ export class EvaluationController extends BaseController {
 
   public evaluate = this.asyncHandler(async (req: Request, res: Response) => {
     if (!req.user) throw new AuthError('Usuario no autenticado')
-    const { sessionId, answerId } = req.params
+    const sessionId = String(req.params.sessionId)
+    const answerId = String(req.params.answerId)
     const evaluation = await this.#evaluationService.evaluateAnswer(req.user.uid, sessionId, answerId)
     return this.ok(res, evaluation.toJSON())
   })

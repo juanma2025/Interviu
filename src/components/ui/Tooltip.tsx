@@ -16,7 +16,7 @@ export function Tooltip({ content, children }: TooltipProps) {
       onFocus={() => setIsVisible(true)}
       onBlur={() => setIsVisible(false)}
     >
-      {React.cloneElement(children, {
+      {React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
         'aria-label': content,
       })}
       {isVisible && (

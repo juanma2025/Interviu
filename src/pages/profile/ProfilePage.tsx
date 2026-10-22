@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Tabs } from '../../features/tabs/components/Tabs.js'
 import { Button } from '../../components/ui/Button.js'
 import { useAuth } from '../../features/auth/hooks/useAuth.js'

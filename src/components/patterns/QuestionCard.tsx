@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Badge } from '../ui/Badge.js'
 
 export interface QuestionCardProps {

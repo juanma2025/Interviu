@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Tabs } from '../../features/tabs/components/Tabs.js'
 import { Reveal } from '../../motion/Reveal.js'
 import { PinnedStory } from '../../motion/PinnedStory.js'
