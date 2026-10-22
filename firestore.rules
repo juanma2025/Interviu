@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+
+    // users/{uid} and all subcollections: only owner can read and write
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+
+      match /{allSubcollections=**} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+
+    // questions/{questionId}: authenticated users can read, no client write
+    match /questions/{questionId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // usage/{docId}: only the document owner (uid) can read, no client write
+    // docId format: {uid}_{YYYYMM}
+    match /usage/{docId} {
+      allow read: if isAuthenticated() && request.auth.uid == docId.split('_')[0];
+      allow write: if false;
+    }
+
+    // feedback/{id}: authenticated users can only create their own feedback, no client read
+    match /feedback/{id} {
+      allow create: if isAuthenticated() && request.resource.data.uid == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    // events/{id}: authenticated users can only create their own events, no client read
+    match /events/{id} {
+      allow create: if isAuthenticated() && request.resource.data.uid == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    // Default deny for everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+
+    /* Path Aliases */
+    "baseUrl": "..",
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@/*": ["src/*"]
+    },
+
+    "verbatimModuleSyntax": false,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/**/*", "../shared/**/*", "../scripts/**/*"]
+}

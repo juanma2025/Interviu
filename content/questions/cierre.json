@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cie-01",
+    "text": "¿Qué preguntas le harías al equipo de ingeniería para evaluar la madurez de sus procesos técnicos y calidad de código?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Formula preguntas sobre cobertura de pruebas, frecuencia de despliegues, cómo gestionan la deuda técnica y cómo se llevan a cabo los code reviews.",
+    "active": true
+  },
+  {
+    "id": "cie-02",
+    "text": "¿Cómo responderías a la pregunta: '¿Dónde te ves profesionalmente en los próximos 3 a 5 años en la industria tecnológica?'?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Muestra ambición alineada con el crecimiento del rol: profundización técnica, contribución al producto, liderazgo técnico o mentoría de pares.",
+    "active": true
+  },
+  {
+    "id": "cie-03",
+    "text": "¿Qué preguntas formularías al Tech Lead o Manager para comprender cómo se mide el éxito de tu rol durante los primeros 90 días?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Demuestra orientación a resultados indagando sobre expectativas a 30-60-90 días, hitos de onboarding y métricas de desempeño esperadas.",
+    "active": true
+  },
+  {
+    "id": "cie-04",
+    "text": "Si te preguntan: '¿Por qué deberíamos contratarte a ti por encima de otros candidatos con mayor experiencia formal?', ¿cómo respondes?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Resalta tu velocidad de aprendizaje deliberado, tu entusiasmo para absorber contexto del negocio, tu rigor en buenas prácticas y tu adaptabilidad.",
+    "active": true
+  },
+  {
+    "id": "cie-05",
+    "text": "¿Qué preguntas harías para evaluar la cultura de trabajo remoto, la comunicación asíncrona y el balance de vida personal de la empresa?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Pregunta por las herramientas de documentación compartida, horarios de guardias/on-call, políticas de reuniones y cultura 'write-first'.",
+    "active": true
+  },
+  {
+    "id": "cie-06",
+    "text": "¿Cómo explicas tu motivación para dar el salto o transición hacia el desarrollo de software y tecnología desde tu formación previa?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa"],
+    "level": ["junior"],
+    "estimatedSeconds": 210,
+    "tip": "Conecta tus habilidades transferibles previas (resolución de problemas, comunicación, disciplina) con tu pasión comprobada mediante proyectos de código reales.",
+    "active": true
+  },
+  {
+    "id": "cie-07",
+    "text": "¿Qué pregunta le harías al entrevistador sobre los desafíos técnicos o cuellos de botella más críticos que el equipo enfrentará en el próximo trimestre?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Demuestra visión estratégica interesándote en cómo tu rol puede aliviar la carga del equipo de inmediato frente a esos desafíos.",
+    "active": true
+  },
+  {
+    "id": "cie-08",
+    "text": "¿Cómo manejas la pregunta sobre tus expectativas salariales sin cerrar puertas ni devaluar tu perfil en una primera ronda?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Menciona rangos de mercado fundamentados en investigación, enfatiza que valoras el paquete integral (desarrollo, beneficios) y pide el rango presupuestado de la posición.",
+    "active": true
+  },
+  {
+    "id": "cie-09",
+    "text": "¿Qué preguntas harías para descubrir cómo fomenta la empresa la capacitación continua, asistencia a conferencias y planes de carrera técnica?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Indaga sobre presupuesto individual de aprendizaje, tiempo dedicado a investigación (e.g. 10-20% time) y programas formales de mentoría interna.",
+    "active": true
+  },
+  {
+    "id": "cie-10",
+    "text": "Si el entrevistador te pregunta: '¿Tienes alguna duda sobre nuestra empresa o el producto?', ¿cuál sería una pregunta de alto impacto que demuestre que investigaste?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Haz referencia a un lanzamiento reciente, una característica específica de su producto o su competencia directa, preguntando por su diferenciador tecnológico.",
+    "active": true
+  },
+  {
+    "id": "cie-11",
+    "text": "¿Cómo cerrarías tu entrevista con una declaración final concisa que refuerce tu interés genuino y agradezca el tiempo del equipo?",
+    "category": "cierre",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 120,
+    "tip": "Agradece con entusiasmo, resume en dos frases por qué la misión del equipo te entusiasma y consulta con naturalidad cuáles son los siguientes pasos del proceso.",
+    "active": true
+  },
+  {
+    "id": "cie-12",
+    "text": "¿Qué preguntas harías sobre la gestión de incidentes en producción (postmortems) para evaluar si existe una cultura de aprendizaje sin culpas (blameless culture)?",
+    "category": "cierre",
+    "role": ["backend", "devops", "fullstack", "qa"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Pregunta cómo se documentan los incidentes mayores, si las lecciones se comparten públicamente con el equipo y cómo se priorizan las acciones correctivas.",
+    "active": true
+  }
+]

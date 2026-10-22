@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sis-01",
+    "text": "¿Cómo diseñarías un servicio acortador de URLs (similar a TinyURL o Bitly) capaz de manejar millones de lecturas diarias?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Inicia con estimaciones de capacidad (QPS, almacenamiento), estrategia de hashing (Base62 vs. auto-incremental con MD5), capa de caché (Redis) y redirección 301 vs. 302.",
+    "active": true
+  },
+  {
+    "id": "sis-02",
+    "text": "Explica el Teorema CAP. Si estuvieras diseñando un sistema de pagos bancarios, ¿qué garantías priorizarías (CP o AP) y por qué?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "data", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Define Consistencia, Disponibilidad y Tolerancia a particiones. En transacciones financieras se prioriza consistencia estricta (CP) para evitar balances duplicados.",
+    "active": true
+  },
+  {
+    "id": "sis-03",
+    "text": "¿Cómo diseñarías un sistema de notificaciones push en tiempo real que soporte millones de usuarios activos y múltiples canales (móvil, email, SMS)?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Estructura la solución con colas de mensajes (Kafka/RabbitMQ), workers desacoplados, control de rate limiting por proveedor y manejo de reintentos con dead-letter queues.",
+    "active": true
+  },
+  {
+    "id": "sis-04",
+    "text": "¿Cuándo recomendarías una arquitectura basada en microservicios frente a un monolito modular bien estructurado? ¿Cuáles son los costos ocultos de los microservicios?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Evalúa el tamaño del equipo, dominio del negocio, sobrecarga operativa (red, latencia, transacciones distribuidas, observabilidad y despliegues independientes).",
+    "active": true
+  },
+  {
+    "id": "sis-05",
+    "text": "¿Qué estrategias de caching existen (Cache-Aside, Write-Through, Write-Behind) y cómo mitigarías problemas como Cache Avalanche y Cache Stampede?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Explica la mecánica de cada patrón y propone soluciones: TTLs aleatorios (jitter), locks distribuidos y precalentamiento (cache warm-up).",
+    "active": true
+  },
+  {
+    "id": "sis-06",
+    "text": "¿Cómo diseñarías el esquema de datos y el flujo de lectura para un muro de noticias (feed) en una red social, balanceando Fan-out on write y Fan-out on read?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "data"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Compara el costo de escribir en el buzón de cada seguidor vs. calcular el feed en tiempo de lectura para cuentas con millones de seguidores (patrón híbrido).",
+    "active": true
+  },
+  {
+    "id": "sis-07",
+    "text": "¿Qué mecanismos emplearías para garantizar la resiliencia en llamadas entre servicios distribuidos (Circuit Breaker, Retries con Exponential Backoff, Bulkheads)?",
+    "category": "sistemas",
+    "role": ["backend", "devops", "fullstack"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Describe los estados del Circuit Breaker (Closed, Open, Half-Open), jitter en reintentos para evitar tormentas de tráfico y aislamiento de hilos o conexiones.",
+    "active": true
+  },
+  {
+    "id": "sis-08",
+    "text": "¿Cómo diseñarías una estrategia de base de datos para manejar billones de filas sin degradar las consultas (Sharding, Particionamiento y Replicación)?",
+    "category": "sistemas",
+    "role": ["backend", "data", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Distingue particionamiento vertical y horizontal, elección de la Shard Key (consistencia de distribución vs. consultas cross-shard) y replicación primary-replica.",
+    "active": true
+  },
+  {
+    "id": "sis-09",
+    "text": "¿Cómo implementarías un sistema de limitación de tasa (Rate Limiter) distribuido para proteger una API pública de abusos?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Compara algoritmos (Token Bucket, Leaky Bucket, Sliding Window Counter) e implementación distribuida con Redis y scripts Lua para operaciones atómicas.",
+    "active": true
+  },
+  {
+    "id": "sis-10",
+    "text": "¿Qué pilares componen la observabilidad moderna (Métricas, Logs distribuidos y Trazas) y cómo implementarías trazabilidad en una solicitud que viaja por múltiples servicios?",
+    "category": "sistemas",
+    "role": ["devops", "backend", "fullstack"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Explica la propagación de cabeceras de contexto (Correlation ID, Trace ID y Span ID en OpenTelemetry) y la centralización de logs estructurados.",
+    "active": true
+  },
+  {
+    "id": "sis-11",
+    "text": "¿Cómo diseñarías el almacenamiento y la entrega eficiente de archivos estáticos pesados (como imágenes y videos de usuarios)?",
+    "category": "sistemas",
+    "role": ["frontend", "backend", "fullstack", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Plantea URLs prefirmadas para subida directa al object storage (S3/Cloud Storage), procesamiento asíncrono en segundo plano y distribución perimetral con CDN.",
+    "active": true
+  },
+  {
+    "id": "sis-12",
+    "text": "¿Cómo resolverías la consistencia de datos en transacciones distribuidas entre múltiples microservicios (Patrón Saga: coreografía vs. orquestación)?",
+    "category": "sistemas",
+    "role": ["backend", "fullstack"],
+    "level": ["senior"],
+    "estimatedSeconds": 240,
+    "tip": "Explica por qué 2-Phase Commit (2PC) bloquea recursos y detalla transacciones compensatorias para rollback semántico en Sagas orquestadas o coreografiadas.",
+    "active": true
+  }
+]

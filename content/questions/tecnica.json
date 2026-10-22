@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tec-01",
+    "text": "¿Cómo funciona el Event Loop en JavaScript/Node.js y cuál es la diferencia entre microtareas y macrotareas?",
+    "category": "tecnica",
+    "role": ["frontend", "backend", "fullstack"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Menciona la pila de ejecución (call stack), la cola de tareas (task queue), microtask queue (Promises, queueMicrotask) y el orden de procesamiento.",
+    "active": true
+  },
+  {
+    "id": "tec-02",
+    "text": "Explica la diferencia entre autenticación basada en sesiones (cookies con estado) y autenticación basada en tokens (JWT). ¿Cuáles son sus pros y contras?",
+    "category": "tecnica",
+    "role": ["backend", "fullstack"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Detalla el almacenamiento en servidor vs. cliente, revocación inmediata, escalabilidad horizontal y riesgos como XSS y CSRF.",
+    "active": true
+  },
+  {
+    "id": "tec-03",
+    "text": "¿Qué es la inmutabilidad y por qué es fundamental en el manejo de estado en aplicaciones frontend modernas como React?",
+    "category": "tecnica",
+    "role": ["frontend", "fullstack"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Explica cómo la inmutabilidad permite comparaciones por referencia superficial (shallow compare), predictibilidad de re-renderizados y depuración determinista.",
+    "active": true
+  },
+  {
+    "id": "tec-04",
+    "text": "¿Cuál es la diferencia entre índices clustered y non-clustered (o índices B-Tree) en bases de datos relacionales y cómo impactan las lecturas y escrituras?",
+    "category": "tecnica",
+    "role": ["backend", "fullstack", "data"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Describe la organización física de las filas en disco con clustered index frente a punteros en non-clustered, y el costo de mantenimiento en INSERTs/UPDATEs.",
+    "active": true
+  },
+  {
+    "id": "tec-05",
+    "text": "Explica qué es la complejidad algorítmica Big-O y compara en tiempo y espacio la búsqueda binaria frente a la búsqueda lineal.",
+    "category": "tecnica",
+    "role": ["backend", "frontend", "fullstack", "data", "qa"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Aclara que la búsqueda binaria requiere datos ordenados O(log n) vs O(n) lineal, ejemplificando con casos prácticos.",
+    "active": true
+  },
+  {
+    "id": "tec-06",
+    "text": "¿Qué principios componen el acrónimo SOLID en programación orientada a objetos? Explica en detalle el principio de inversión de dependencias (DIP).",
+    "category": "tecnica",
+    "role": ["backend", "fullstack", "qa"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Enumera brevemente cada letra y profundiza en cómo depender de abstracciones (interfaces) facilita el testing y desacopla módulos de alto y bajo nivel.",
+    "active": true
+  },
+  {
+    "id": "tec-07",
+    "text": "¿Cómo previenes vulnerabilidades comunes de seguridad web como SQL Injection, Cross-Site Scripting (XSS) y Cross-Site Request Forgery (CSRF)?",
+    "category": "tecnica",
+    "role": ["backend", "frontend", "fullstack", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Menciona consultas parametrizadas/ORMs, sanitización y escaping de HTML, cabeceras CSP, cookies SameSite y tokens anti-CSRF.",
+    "active": true
+  },
+  {
+    "id": "tec-08",
+    "text": "Describe la pirámide de pruebas de software: ¿cuándo utilizarías pruebas unitarias, de integración y end-to-end (e2e)?",
+    "category": "tecnica",
+    "role": ["qa", "backend", "frontend", "fullstack"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Analiza la relación entre velocidad de ejecución, costo de mantenimiento y confianza que entrega cada nivel de prueba.",
+    "active": true
+  },
+  {
+    "id": "tec-09",
+    "text": "¿Qué diferencias existen entre contenedores Docker y máquinas virtuales tradicionales? Explica el concepto de namespaces y cgroups en Linux.",
+    "category": "tecnica",
+    "role": ["devops", "backend", "fullstack"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Destaca la compartición del kernel del host frente al hipervisor con sistema operativo invitado completo, así como los tiempos de arranque y huella de memoria.",
+    "active": true
+  },
+  {
+    "id": "tec-10",
+    "text": "¿Qué es la normalización de datos (1FN, 2FN, 3FN) y en qué escenarios reales convendría desnormalizar intencionalmente una base de datos?",
+    "category": "tecnica",
+    "role": ["backend", "data", "fullstack"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Define la eliminación de redundancias y anomalías de actualización frente al beneficio de evitar joins costosos en lecturas intensivas o analítica.",
+    "active": true
+  },
+  {
+    "id": "tec-11",
+    "text": "Explica cómo funciona la propagación de eventos en el DOM (Event Bubbling y Event Capturing) y qué problema resuelve la delegación de eventos.",
+    "category": "tecnica",
+    "role": ["frontend", "fullstack"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Ilustra las fases captura-target-burbuja y cómo escuchar en un contenedor padre optimiza el uso de memoria en listas dinámicas grandes.",
+    "active": true
+  },
+  {
+    "id": "tec-12",
+    "text": "¿Qué es la idempotencia en servicios web RESTful y qué métodos HTTP deben ser estrictamente idempotentes?",
+    "category": "tecnica",
+    "role": ["backend", "fullstack", "qa"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Explica que múltiples solicitudes idénticas producen el mismo estado en el servidor; identifica GET, PUT, DELETE como idempotentes y POST como no idempotente.",
+    "active": true
+  }
+]

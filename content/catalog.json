@@ -1,0 +1,73 @@
+{
+  "roles": [
+    {
+      "id": "backend",
+      "name": "Backend Developer",
+      "description": "Desarrollo de APIs, servicios, bases de datos y arquitectura del lado del servidor."
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Developer",
+      "description": "Interfaces de usuario, experiencia interactiva, accesibilidad y rendimiento en cliente."
+    },
+    {
+      "id": "fullstack",
+      "name": "Fullstack Developer",
+      "description": "Integración completa de interfaz de usuario, backend y almacenamiento de datos."
+    },
+    {
+      "id": "data",
+      "name": "Data Engineer / Analyst",
+      "description": "Pipelines de datos, transformaciones ETL, SQL avanzado y modelado analítico."
+    },
+    {
+      "id": "qa",
+      "name": "QA Automation Engineer",
+      "description": "Estrategias de pruebas, automatización e2e, integración continua y calidad de software."
+    },
+    {
+      "id": "devops",
+      "name": "DevOps / Cloud Engineer",
+      "description": "Infraestructura como código, contenedores, CI/CD, observabilidad y despliegue en la nube."
+    }
+  ],
+  "levels": [
+    {
+      "id": "junior",
+      "name": "Junior",
+      "description": "Recién graduados o profesionales en transición con fundamentos sólidos y primeros proyectos."
+    },
+    {
+      "id": "semi-senior",
+      "name": "Semi-Senior",
+      "description": "Profesionales con autonomía técnica, resolución de problemas prácticos y trabajo en equipo."
+    },
+    {
+      "id": "senior",
+      "name": "Senior",
+      "description": "Liderazgo técnico, decisiones de arquitectura, mentoría y gestión de complejidad e impacto."
+    }
+  ],
+  "categories": [
+    {
+      "id": "comportamiento",
+      "name": "Comportamiento",
+      "description": "Situaciones pasadas evaluadas bajo la metodología STAR (Situación, Tarea, Acción, Resultado)."
+    },
+    {
+      "id": "tecnica",
+      "name": "Técnica",
+      "description": "Conceptos fundamentales, algoritmos, depuración y mejores prácticas del rol."
+    },
+    {
+      "id": "sistemas",
+      "name": "Diseño de Sistemas",
+      "description": "Arquitectura, escalabilidad, resiliencia, modelos de datos y trade-offs técnicos."
+    },
+    {
+      "id": "cierre",
+      "name": "Cierre y Cultura",
+      "description": "Preguntas estratégicas al entrevistador, alineación cultural y proyección profesional."
+    }
+  ]
+}

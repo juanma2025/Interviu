@@ -1,0 +1,122 @@
+[
+  {
+    "id": "comp-01",
+    "text": "Cuéntame sobre una ocasión en la que tuviste que aprender una nueva tecnología o lenguaje en poco tiempo para cumplir con un plazo.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Usa la estructura STAR: describe el contexto, qué debías lograr, tu estrategia de aprendizaje deliberado y el impacto cuantificable en la entrega.",
+    "active": true
+  },
+  {
+    "id": "comp-02",
+    "text": "Describe una situación en la que tuviste un desacuerdo técnico con un compañero de equipo o líder. ¿Cómo lo abordaste y cuál fue el resultado?",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Enfócate en la comunicación basada en datos y pruebas objetivas, manteniendo la empatía profesional y el beneficio del proyecto.",
+    "active": true
+  },
+  {
+    "id": "comp-03",
+    "text": "Háblame de un error que cometiste en un proyecto o despliegue y cómo lo solucionaste.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Asume responsabilidad honesta, explica las acciones inmediatas de mitigación y qué medidas preventivas implementaste para que no se repitiera.",
+    "active": true
+  },
+  {
+    "id": "comp-04",
+    "text": "¿Cómo manejas una situación en la que los requisitos de una tarea no son claros o cambian constantemente?",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Menciona cómo buscas clarificación temprana con product managers o interesados, documentas supuestos y entregas prototipos incrementales.",
+    "active": true
+  },
+  {
+    "id": "comp-05",
+    "text": "Cuéntame de un proyecto del que te sientas especialmente orgulloso y cuál fue tu aporte individual.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 240,
+    "tip": "Destaca tu rol concreto, los desafíos técnicos que superaste y las métricas finales (rendimiento, adopción o satisfacción de usuarios).",
+    "active": true
+  },
+  {
+    "id": "comp-06",
+    "text": "Describe un momento en el que tuviste que recibir retroalimentación crítica sobre tu código en un code review. ¿Cómo reaccionaste?",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Demuestra mentalidad de crecimiento, separa tu identidad de tu código y explica cómo aplicaste la sugerencia para elevar la calidad.",
+    "active": true
+  },
+  {
+    "id": "comp-07",
+    "text": "Háblame de una ocasión en la que tuviste que priorizar múltiples tareas urgentes con recursos limitados.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Explica tu marco de priorización (impacto vs. esfuerzo, matriz de Eisenhower), comunicación con stakeholders y gestión de expectativas.",
+    "active": true
+  },
+  {
+    "id": "comp-08",
+    "text": "Cuéntame sobre una ocasión en la que tuviste que explicar un concepto técnico complejo a una persona sin perfil técnico.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Muestra capacidad de síntesis, uso de analogías cotidianas y validación activa de que el interlocutor comprendió el mensaje clave.",
+    "active": true
+  },
+  {
+    "id": "comp-09",
+    "text": "Describe cómo ayudaste a un compañero de equipo que estaba bloqueado o pasando por una dificultad técnica.",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 180,
+    "tip": "Resalta la colaboración y pair-programming guiado mediante preguntas en lugar de imponer la solución terminada.",
+    "active": true
+  },
+  {
+    "id": "comp-10",
+    "text": "Háblame de una ocasión en la que tuviste que tomar una decisión técnica con información incompleta.",
+    "category": "comportamiento",
+    "role": ["backend", "fullstack", "devops"],
+    "level": ["semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Explica cómo balanceaste el sesgo por la acción con la mitigación de riesgos, estableciendo mecanismos de reversibilidad rápida.",
+    "active": true
+  },
+  {
+    "id": "comp-11",
+    "text": "¿Cómo mantienes la motivación y la productividad cuando trabajas en una tarea repetitiva o con deuda técnica heredada?",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "qa"],
+    "level": ["junior", "semi-senior"],
+    "estimatedSeconds": 180,
+    "tip": "Conecta la tarea con el objetivo de negocio más amplio, propón automatizaciones incrementales y aplica la regla del boy scout.",
+    "active": true
+  },
+  {
+    "id": "comp-12",
+    "text": "Cuéntame sobre una experiencia en la que un proyecto no alcanzó sus objetivos o falló. ¿Qué lecciones aprendiste?",
+    "category": "comportamiento",
+    "role": ["backend", "frontend", "fullstack", "data", "qa", "devops"],
+    "level": ["junior", "semi-senior", "senior"],
+    "estimatedSeconds": 210,
+    "tip": "Sé honesto sobre los factores clave del fallo (retrospectiva blameless), qué harías diferente hoy y cómo cambió tu práctica laboral.",
+    "active": true
+  }
+]
