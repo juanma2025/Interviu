@@ -2,41 +2,43 @@
 
 @layer base {
   :root {
-    --bg: #f6f4ee;
+    --bg: #f4f7f5;
     --surface: #ffffff;
-    --surface-subtle: #f0ece1;
-    --surface-glass: rgba(255, 255, 255, 0.75);
-    --text: #1c2b2d;
-    --text-muted: #67716f;
-    --line: #dcd7c8;
-    --line-subtle: #eae5d7;
-    --accent: #3b6e64;
-    --accent-strong: #274b44;
-    --accent-soft: #e3ece9;
-    --highlight: #c97a2b;
-    --danger: #b5482f;
-    --danger-soft: #fbeee9;
+    --surface-subtle: #edf4f0;
+    --surface-glass: rgba(255, 255, 255, 0.85);
+    --text: #121e1a;
+    --text-muted: #536b62;
+    --line: #e1ede7;
+    --line-subtle: #edf4f0;
+    --accent: #2d5a4c;
+    --accent-strong: #1e3f34;
+    --accent-soft: #e3f0ea;
+    --accent-hover: #244b3f;
+    --highlight: #d97706;
+    --danger: #dc2626;
+    --danger-soft: #fee2e2;
     --radius-control: 12px;
     --radius-card: 20px;
     --radius-sheet: 28px;
-    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, sans-serif;
+    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
   }
 
   .dark {
-    --bg: #101819;
-    --surface: #182224;
-    --surface-subtle: #202d30;
-    --surface-glass: rgba(24, 34, 36, 0.78);
-    --text: #eef2f0;
-    --text-muted: #8e9e9b;
-    --line: #27383b;
-    --line-subtle: #1e2c2e;
-    --accent: #6fb3a4;
-    --accent-strong: #90cbbf;
-    --accent-soft: #18312c;
-    --highlight: #e0984f;
-    --danger: #d9664e;
-    --danger-soft: #381f1b;
+    --bg: #0f1715;
+    --surface: #162420;
+    --surface-subtle: #1c2e29;
+    --surface-glass: rgba(22, 36, 32, 0.85);
+    --text: #f0fdf4;
+    --text-muted: #88a39a;
+    --line: #243a34;
+    --line-subtle: #1c2e29;
+    --accent: #52a38c;
+    --accent-strong: #72bca7;
+    --accent-soft: #19362e;
+    --accent-hover: #61b39c;
+    --highlight: #f59e0b;
+    --danger: #ef4444;
+    --danger-soft: #391c1c;
   }
 
   * {

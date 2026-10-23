@@ -1,4 +1,4 @@
-import React from 'react'
+import type { ReactNode } from 'react'
 
 export interface StatCardProps {
   label: string
@@ -8,7 +8,7 @@ export interface StatCardProps {
     value: string
     isPositive?: boolean
   }
-  icon?: React.ReactNode
+  icon?: ReactNode
   className?: string
 }
 
