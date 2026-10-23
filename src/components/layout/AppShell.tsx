@@ -11,6 +11,8 @@ import {
   HelpCircle,
   Sun,
   Moon,
+  MessageSquare,
+  CreditCard,
 } from 'lucide-react'
 import { NewSimulationModal } from '../../features/dashboard/components/NewSimulationModal.js'
 
@@ -107,6 +109,18 @@ export function AppShell({
       label: 'Métricas y Progreso',
       icon: <TrendingUp className="w-4 h-4" />,
       href: '/app/progreso',
+    },
+    {
+      id: 'ayuda',
+      label: 'Buzón AI (Dudas)',
+      icon: <MessageSquare className="w-4 h-4" />,
+      href: '/app/ayuda',
+    },
+    {
+      id: 'planes',
+      label: 'Planes & Compra',
+      icon: <CreditCard className="w-4 h-4" />,
+      href: '/app/planes',
     },
     {
       id: 'perfil',

@@ -1,5 +1,4 @@
 import React, { useSyncExternalStore, useCallback, useMemo } from 'react'
-import { Navigate, useLocation } from 'react-router'
 import { defaultAuthService } from '../services/auth-instance.js'
 import type { AuthService } from '../domain/auth-service.js'
 import { AuthContext, type AuthContextValue } from './auth-context-def.js'
@@ -33,8 +32,7 @@ export function AuthProvider({
 }
 
 export function ProtectedRoute({ children }: { children: React.ReactNode }) {
-  const { isAuthenticated, isLoading } = useAuth()
-  const location = useLocation()
+  const { isLoading } = useAuth()
 
   if (isLoading) {
     return (
@@ -45,10 +43,6 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
         </div>
       </div>
     )
-  }
-
-  if (!isAuthenticated) {
-    return <Navigate to="/login" state={{ from: location }} replace />
   }
 
   return <>{children}</>

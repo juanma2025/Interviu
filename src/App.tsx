@@ -8,6 +8,8 @@ import { DashboardPage } from './pages/dashboard/DashboardPage.js'
 import { PracticePage } from './pages/practice/PracticePage.js'
 import { SimulationsPage } from './pages/simulations/SimulationsPage.js'
 import { ProgressPage } from './pages/progress/ProgressPage.js'
+import { HelpDeskPage } from './pages/helpdesk/HelpDeskPage.js'
+import { PricingPlansPage } from './pages/pricing/PricingPlansPage.js'
 import { RegisterPage } from './pages/auth/RegisterPage.js'
 import { LoginPage } from './pages/auth/LoginPage.js'
 import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage.js'
@@ -93,6 +95,46 @@ export default function App() {
               <ProtectedRoute>
                 <AppShellWrapper>
                   <ProgressPage />
+                </AppShellWrapper>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/app/ayuda"
+            element={
+              <ProtectedRoute>
+                <AppShellWrapper>
+                  <HelpDeskPage />
+                </AppShellWrapper>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/preguntas"
+            element={
+              <ProtectedRoute>
+                <AppShellWrapper>
+                  <HelpDeskPage />
+                </AppShellWrapper>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/app/planes"
+            element={
+              <ProtectedRoute>
+                <AppShellWrapper>
+                  <PricingPlansPage />
+                </AppShellWrapper>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/planes"
+            element={
+              <ProtectedRoute>
+                <AppShellWrapper>
+                  <PricingPlansPage />
                 </AppShellWrapper>
               </ProtectedRoute>
             }
