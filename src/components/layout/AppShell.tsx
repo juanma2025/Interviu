@@ -15,6 +15,7 @@ import {
   CreditCard,
 } from 'lucide-react'
 import { NewSimulationModal } from '../../features/dashboard/components/NewSimulationModal.js'
+import { useTheme } from '../../context/useTheme.js'
 
 export interface NavItem {
   id: string
@@ -36,17 +37,7 @@ export function AppShell({
   children,
   userDisplayName = 'Sofía Ramírez',
 }: AppShellProps) {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (prefersDark) {
-        document.documentElement.classList.add('dark')
-      }
-      return prefersDark
-    }
-    return false
-  })
-
+  const { isDark, toggleTheme } = useTheme()
   const [isNewSimModalOpen, setIsNewSimModalOpen] = useState(false)
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false)
   const [notifications, setNotifications] = useState([
@@ -72,18 +63,6 @@ export function AppShell({
       unread: false,
     },
   ])
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev
-      if (next) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-      return next
-    })
-  }
 
   const navItems: NavItem[] = [
     {

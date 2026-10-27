@@ -1,44 +1,49 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @layer base {
   :root {
-    --bg: #f4f7f5;
-    --surface: #ffffff;
-    --surface-subtle: #edf4f0;
-    --surface-glass: rgba(255, 255, 255, 0.85);
-    --text: #121e1a;
-    --text-muted: #536b62;
-    --line: #e1ede7;
-    --line-subtle: #edf4f0;
-    --accent: #2d5a4c;
-    --accent-strong: #1e3f34;
-    --accent-soft: #e3f0ea;
-    --accent-hover: #244b3f;
-    --highlight: #d97706;
-    --danger: #dc2626;
-    --danger-soft: #fee2e2;
+    /* Apple Light Mode (Clean White / Off-White / Solid Black Text) */
+    --bg: #FBFBFD;
+    --surface: #FFFFFF;
+    --surface-subtle: #F5F5F7;
+    --surface-glass: rgba(255, 255, 255, 0.80);
+    --text: #000000;
+    --text-muted: #6E6E73;
+    --line: #E5E5EA;
+    --line-subtle: #F2F2F7;
+    --accent: #111111;
+    --accent-strong: #000000;
+    --accent-soft: #F2F2F7;
+    --accent-hover: #2C2C2E;
+    --highlight: #10B981;
+    --danger: #FF3B30;
+    --danger-soft: #FEE2E2;
     --radius-control: 12px;
-    --radius-card: 20px;
+    --radius-card: 22px;
     --radius-sheet: 28px;
-    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
+    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
   }
 
   .dark {
-    --bg: #0f1715;
-    --surface: #162420;
-    --surface-subtle: #1c2e29;
-    --surface-glass: rgba(22, 36, 32, 0.85);
-    --text: #f0fdf4;
-    --text-muted: #88a39a;
-    --line: #243a34;
-    --line-subtle: #1c2e29;
-    --accent: #52a38c;
-    --accent-strong: #72bca7;
-    --accent-soft: #19362e;
-    --accent-hover: #61b39c;
-    --highlight: #f59e0b;
-    --danger: #ef4444;
-    --danger-soft: #391c1c;
+    /* Apple Dark Mode (Pure OLED Black / Solid White Text) */
+    --bg: #000000;
+    --surface: #121214;
+    --surface-subtle: #1C1C1E;
+    --surface-glass: rgba(18, 18, 20, 0.82);
+    --text: #FFFFFF;
+    --text-muted: #8E8E93;
+    --line: rgba(255, 255, 255, 0.10);
+    --line-subtle: rgba(255, 255, 255, 0.05);
+    --accent: #FFFFFF;
+    --accent-strong: #F5F5F7;
+    --accent-soft: #2C2C2E;
+    --accent-hover: #E5E5EA;
+    --highlight: #34D399;
+    --danger: #FF453A;
+    --danger-soft: #381A1A;
   }
 
   * {
@@ -57,17 +62,34 @@
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
+    transition: background-color 250ms ease-out, color 250ms ease-out;
   }
 }
 
-/* Glassmorphism translucent material */
+/* Apple HIG Glassmorphism translucent material */
 .glass-panel {
   background: var(--surface-glass);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
 
-/* Tap target minimum 44px */
+/* Apple Card Subtle Elevation */
+.apple-card {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms ease;
+}
+
+.apple-card:hover {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.dark .apple-card:hover {
+  border-color: rgba(255, 255, 255, 0.20);
+}
+
+/* Tap target minimum 44px for Apple HIG accessibility */
 .tap-target {
   min-width: 44px;
   min-height: 44px;
@@ -76,15 +98,17 @@
   justify-content: center;
 }
 
-/* Custom fluid typography */
+/* Apple fluid typography */
 .text-fluid-title {
-  font-size: clamp(1.75rem, 4vw + 0.5rem, 3.25rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 5vw + 0.5rem, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 800;
 }
 
 .text-fluid-headline {
-  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.875rem);
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
 }
